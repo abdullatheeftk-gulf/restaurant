@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Image</title>
+    <style>
+        .content{
+            max-width: 500px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="content" >
+        <h1>Uploaded Food Item</h1>
+        <form method="POST" action="/admin/createFoodItem" enctype="multipart/form-data">
+            <input type="file" name = "image">
+            <br>
+            <br>
+            <input type="text" name = "name" placeholder="Enter Food Name">
+            <br>
+            <br>
+            <input type="number" name = "menuCardNumber" step="1" placeholder="Enter Menu Number">
+            <br>
+            <br>
+            <input type="number" name = "price" step="0.01" placeholder="Enter food price">
+            <br>
+            <br>
+            <input type="text" name = "category" placeholder="Enter food category">
+            <br>
+            <br>
+            <input type="number" name = "favourite" step="1" placeholder="Is it favourite">
+            <br>
+            <br>
+            <input type="submit">
+        </form>
+    </div>
+    
+</body>
+</html>

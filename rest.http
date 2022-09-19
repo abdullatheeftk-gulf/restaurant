@@ -1,0 +1,19 @@
+#api test
+
+http://localhost:3000
+
+###admin/create user
+POST http://localhost:3000/auth/admin/createUser
+
+Content-Type: application/json
+
+{
+    "deviceId":"asdsdsdcssds54"
+}
+
+###
+POST http://localhost:3000/auth/signIn
+
+
+###
+GET http://localhost:3000/foodItemList/getAll
